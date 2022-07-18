@@ -1,48 +1,29 @@
 import React from "react";
 
+function SubCaixasStories(props) {
+  return (
+      <div className="caixaDentroDoStories">
+          <img src={props.img} />
+          <p className="p">{props.titlie}</p>
+      </div>
+  );
+}
+
 export default function Stories() {
+
     return (
-        <div class="stories">
-            <div class="caixa1">
-              <img src="./imagens/familia.png" />
-              <p class="p">família</p>
-            </div>
+      <div className="stories">
+          <SubCaixasStories titlie="família" img="./imagens/familia.png"/>
+          <SubCaixasStories titlie="tarefas" img="./imagens/tarefas.png"/>
+          <SubCaixasStories titlie="trabalho" img="./imagens/trabalho.png"/>
+          <SubCaixasStories titlie="livros" img="./imagens/livros.png"/>
+          <SubCaixasStories titlie="meditação" img="./imagens/meditacao.png"/>
+          <SubCaixasStories titlie="viagens" img="./imagens/viagens.png"/>
+          <SubCaixasStories titlie="filmes" img="./imagens/Filmes.png"/>
+          <SubCaixasStories titlie="música" img="./imagens/musicas.png"/>
 
-            <div class="caixa2">
-              <img src="./imagens/tarefas.png" />
-              <p class="p">tarefas</p>
-            </div>
+          <img className="seta" src="./imagens/seta.png" />
 
-            <div class="caixa3">
-              <img src="./imagens/trabalho.png" />
-              <p class="p">trabalho</p>
-            </div>
-
-            <div class="caixa4">
-              <img src="./imagens/livros.png" />
-              <p class="p">livros</p>
-            </div>
-
-            <div class="caixa5">
-              <img src="./imagens/meditacao.png" />
-              <p class="p">meditação</p>
-            </div>
-
-            <div class="caixa6">
-              <img src="./imagens/viagens.png" />
-              <p class="p">viagens</p>
-            </div>
-
-            <div class="caixa7">
-              <img src="./imagens/Filmes.png" />
-              <p class="p">filmes</p>
-            </div>
-
-            <div class="caixa8">
-              <img src="./imagens/musicas.png" />
-              <p class="p">música</p>
-            </div>
-            <img class="seta" src="./imagens/seta.png" />
         </div>
     );
 }

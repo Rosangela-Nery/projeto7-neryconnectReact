@@ -101,26 +101,12 @@ ion-icon {
   justify-content: space-between;
 }
 
-.caixa1,
-.caixa2,
-.caixa3,
-.caixa4,
-.caixa5,
-.caixa6,
-.caixa7,
-.caixa8 {
+.caixaDentroDoStories {
   margin-left: 21px;
   align-items: center;
 }
 
-.caixa1:hover,
-.caixa2:hover,
-.caixa3:hover,
-.caixa4:hover,
-.caixa5:hover,
-.caixa6:hover,
-.caixa7:hover,
-.caixa8:hover {
+.caixaDentroDoStories:hover {
   background-color: #d9d9d9;
 }
 
@@ -251,7 +237,7 @@ ion-icon {
   left: calc(100% - 37%);
 }
 
-.perfil {
+.perfilPessoal {
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -260,21 +246,21 @@ ion-icon {
   flex-direction: row;
 }
 
-.perfil:hover {
+.perfilPessoal:hover {
   background-color: #d9d9d9;
 }
 
-.perfil img {
+.perfilPessoal img {
   width: 56px;
   height: 56px;
 }
 
-.perfil .nome {
+.perfilPessoal .nome {
   margin-left: 10px;
   align-items: center;
 }
 
-.c1 h3 {
+.sugestaoDePerfil h3 {
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 15px;
@@ -291,20 +277,6 @@ ion-icon {
   font-weight: 500;
   color: #262626;
   line-height: 16px;
-}
-
-.galeria p {
-  font-size: 12px;
-  font-weight: 400;
-  color: #8e8e8e;
-  line-height: 14px;
-}
-
-.galeria h5 {
-  font-size: 12px;
-  font-weight: 500;
-  color: #139ef2;
-  line-height: 14px;
 }
 
 .caixa {
@@ -328,7 +300,7 @@ ion-icon {
   font-size: 14px;
 }
 
-.c1 {
+.sugestaoDePerfil {
   width: 293px;
   justify-content: space-between;
   display: flex;
@@ -336,35 +308,39 @@ ion-icon {
   margin-bottom: 15px;
 }
 
-.c2,
-.c3,
-.c4,
-.c5,
-.c6 {
+.seguir {
+  font-size: 12px;
+  font-weight: 500;
+  color: #139ef2;
+  line-height: 14px;
+}
+
+
+.galeria2 p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8e8e8e;
+  line-height: 14px;
+}
+
+.perfilSugerido {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.c2:hover,
-.c3:hover,
-.c4:hover,
-.c5:hover,
-.c6:hover {
+.perfilSugerido:hover {
   background-color: #d9d9d9;
 }
 
-.c1 h6 {
+.sugestaoDePerfil h6 {
   align-items: center;
   margin-left: 100px;
   font-size: 12px;
+  font-weight: 500;
 }
 
-.cai2,
-.cai3,
-.cai4,
-.cai5,
-.cai6 {
+.fotoENomeDoPerfilSugerido {
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -373,11 +349,7 @@ ion-icon {
   flex-direction: row;
 }
 
-.cai2,
-.cai3,
-.cai4,
-.cai5,
-.cai6,
+.fotoENomeDoPerfilSugerido,
 .name {
   margin-left: 10px;
   align-items: center;
@@ -391,15 +363,6 @@ ion-icon {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
-}
-
-.bar1 img,
-.bar2 img,
-.bar3 img,
-.bar4 img,
-.bar5 img {
-  width: 16px;
-  height: 16px;
 }
 
 .inferior {
@@ -417,6 +380,11 @@ ion-icon {
   right: 0;
   left: 0;
   z-index: 1;
+}
+
+.barraInferior img {
+  width: 16px;
+  height: 16px;
 }
 
 @media (max-width: 934px) {

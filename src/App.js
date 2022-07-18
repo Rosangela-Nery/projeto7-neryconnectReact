@@ -3,6 +3,7 @@ import Mobile from './Mobile';
 import Stories from './Stories';
 import Conteudo from './Conteudo';
 import Sidebar from './Sidebar';
+import BarraInferior from './Barra-Inferior';
 
 export default function App() {
     return (
@@ -12,20 +13,15 @@ export default function App() {
             <div className='galeriaPrincipal'>
                 <div className='galeria3'>
                     <div className='galeria1'>
-                        <div className='stories'>
-                            <Stories />
-                        </div>
-
+                        <Stories />
                         <div className='conteudo'>
                             <Conteudo />
                         </div>
                     </div>
-
-                    <div className='galeria2'>
-                        <Sidebar />
-                    </div>
+                    <Sidebar />
                 </div>
             </div>
+            <BarraInferior />
         </div>
     );
 }
