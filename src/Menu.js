@@ -1,6 +1,5 @@
-import React from "react";
-
 export default function Menu() {
+
     return (
         <div class="menu">
             <div class="men">
@@ -11,7 +10,7 @@ export default function Menu() {
                         width="20px"
                         height="20px"
                     />
-                    <img
+                    <img 
                         class="logo"
                         src="./imagens/logo.png"
                         width="130px"

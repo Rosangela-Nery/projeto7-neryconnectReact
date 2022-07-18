@@ -1,5 +1,3 @@
-import React from "react";
-
 function Posts(props) {
   return (
     <div class="conteudo1">
@@ -45,17 +43,18 @@ function Posts(props) {
 }
 
 export default function Conteudo() {
+
+    const novoPoster = [
+      {imagem: "./imagens/livros.png", paragrafo: "livros", poster: "./imagens/1.png", perfil_Que_Curtiu: "./imagens/trabalho.png", perfil: "trabalho", quantidade_de_curtidas: " outras 101.523 pessoas"},
+      {imagem: "./imagens/meditacao.png", paragrafo: "meditação", poster: "./imagens/2.png", perfil_Que_Curtiu: "./imagens/familia.png", perfil: "familia", quantidade_de_curtidas: " outras 99.143 pessoas"},
+      {imagem: "./imagens/viagens.png", paragrafo: "viagens", poster: "./imagens/3.png", perfil_Que_Curtiu: "./imagens/Filmes.png", perfil:"filmes", quantidade_de_curtidas: " outras 205.103 pessoas"},
+      {imagem: "./imagens/Filmes.png", paragrafo: "filmes", poster: "./imagens/4.png", perfil_Que_Curtiu: "./imagens/musicas.png", perfil: "musicas", quantidade_de_curtidas: " outras 89.905 pessoas"},
+      {imagem: "./imagens/familia.png", paragrafo: "família", poster:"./imagens/5.png", perfil_Que_Curtiu: "./imagens/tarefas.png", perfil: "tarefas", quantidade_de_curtidas:" outras 180.809 pessoas"}
+    ];
+
     return (
-      <div class="conteudo">
-        <Posts imagem="./imagens/livros.png" paragrafo="livros" poster="./imagens/1.png" perfil_Que_Curtiu="./imagens/trabalho.png" perfil="trabalho" quantidade_de_curtidas=" outras 101.523 pessoas" />
-
-        <Posts imagem="./imagens/meditacao.png" paragrafo="meditação" poster="./imagens/2.png" perfil_Que_Curtiu="./imagens/familia.png" perfil="familia" quantidade_de_curtidas=" outras 99.143 pessoas" />
-
-        <Posts imagem="./imagens/viagens.png" paragrafo="viagens" poster="./imagens/3.png" perfil_Que_Curtiu="./imagens/Filmes.png" perfil="filmes" quantidade_de_curtidas=" outras 205.103 pessoas" />
-
-        <Posts imagem="./imagens/Filmes.png" paragrafo="filmes" poster="./imagens/4.png" perfil_Que_Curtiu="./imagens/musicas.png" perfil="musicas" quantidade_de_curtidas=" outras 89.905 pessoas" />
-
-        <Posts imagem="./imagens/familia.png" paragrafo="família" poster="./imagens/5.png" perfil_Que_Curtiu="./imagens/tarefas.png" perfil="tarefas" quantidade_de_curtidas=" outras 180.809 pessoas" />
+      <div class="conteudo"> 
+        {novoPoster.map((poster) => <Posts imagem={poster.imagem} paragrafo={poster.paragrafo} poster={poster.poster} perfil_Que_Curtiu={poster.perfil_Que_Curtiu} perfil={poster.perfil} quantidade_de_curtidas={poster.quantidade_de_curtidas} />)}
       </div>
     );
 }

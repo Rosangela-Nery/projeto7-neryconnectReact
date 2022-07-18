@@ -1,5 +1,3 @@
-import React from "react";
-
 function GaleriaSidebar (props) {
   return (
     <div className="sidebar">
@@ -24,6 +22,15 @@ function GaleriaSidebar (props) {
 }
 
 export default function Sidebar() {
+
+    let itensDoSidebar = [
+      {fotoDoPerfil: "./imagens/foto2.png", nomeDoPerfil: "sakura_gh.23"},
+      {fotoDoPerfil: "imagens/foto3.png", nomeDoPerfil:"driven"},
+      {fotoDoPerfil: "imagens/foto4.png", nomeDoPerfil:"Kay.002"},
+      {fotoDoPerfil: "imagens/foto5.png", nomeDoPerfil:"respondeaí"},
+      {fotoDoPerfil: "imagens/foto6.png", nomeDoPerfil: "thamy.ys.89"}
+    ]
+
     return (
         <div className="galeria2">
 
@@ -50,11 +57,7 @@ export default function Sidebar() {
                 </div>
               </div>
 
-              <GaleriaSidebar fotoDoPerfil="./imagens/foto2.png" nomeDoPerfil="sakura_gh.23"/>
-              <GaleriaSidebar fotoDoPerfil="imagens/foto3.png" nomeDoPerfil="driven"/>
-              <GaleriaSidebar fotoDoPerfil="imagens/foto4.png" nomeDoPerfil="Kay.002"/>
-              <GaleriaSidebar fotoDoPerfil="imagens/foto5.png" nomeDoPerfil="respondeaí"/>
-              <GaleriaSidebar fotoDoPerfil="imagens/foto6.png" nomeDoPerfil="thamy.ys.89"/>
+              {itensDoSidebar.map((itens) => <GaleriaSidebar fotoDoPerfil={itens.fotoDoPerfil} nomeDoPerfil={itens.nomeDoPerfil}/>)}
 
             </div>
           </div>
