@@ -14,9 +14,7 @@ export default function App() {
                 <div className='galeria3'>
                     <div className='galeria1'>
                         <Stories />
-                        <div className='conteudo'>
-                            <Conteudo />
-                        </div>
+                        <Conteudo />
                     </div>
                     <Sidebar />
                 </div>

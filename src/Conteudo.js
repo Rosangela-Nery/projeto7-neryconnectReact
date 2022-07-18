@@ -1,4 +1,16 @@
+import React from "react";
+
 function Posts(props) {
+
+  const [corBotao, setCorBotao] = React.useState("heart-outline");
+  function corDoBotao(){
+      if(corBotao === "heart-outline") {
+        setCorBotao("heart")
+      } else{
+        setCorBotao("heart-outline")
+      }
+  }
+
   return (
     <div class="conteudo1">
               <div class="topico">
@@ -15,11 +27,11 @@ function Posts(props) {
                 </div>
               </div>
               <div class="imag">
-                <img src={props.poster}/>
+                <img onDoubleClick={() => {if(corBotao === 'heart-outline') {setCorBotao("heart")}}} src={props.poster}/>
               </div>
               <div class="barra">
                 <div class="barra1">
-                  <ion-icon name="heart-outline"></ion-icon>
+                  <ion-icon onClick={corDoBotao} name={corBotao}></ion-icon>
                   <ion-icon name="chatbubble-outline"></ion-icon>
                   <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
@@ -41,6 +53,7 @@ function Posts(props) {
           </div>
   );
 }
+
 
 export default function Conteudo() {
 
