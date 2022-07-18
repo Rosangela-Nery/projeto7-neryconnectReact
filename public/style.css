@@ -18,6 +18,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .menu1 {
@@ -236,7 +237,7 @@ ion-icon {
   height: 500px;
 
   position: fixed;
-  left: calc(100% - 37%);
+  right: calc((100% - 935px) / 2);
 }
 
 .perfilPessoal {

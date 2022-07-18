@@ -22,7 +22,7 @@ export default function Stories() {
 
     return (
       <div className="stories">
-        {novoItem.map((item) => <SubCaixasStories titlie={item.title} img={item.img}/>)}
+        {novoItem.map((item) => <SubCaixasStories title={item.title} img={item.img}/>)}
         <img className="seta" src="./imagens/seta.png" />
       </div>
     );
