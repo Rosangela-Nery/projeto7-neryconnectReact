@@ -1,4 +1,9 @@
+import React from "react";
+
 function GaleriaSidebar (props) {
+
+    const [status, setStatus] = React.useState('Seguir');
+
   return (
     <div className="sidebar">
 
@@ -13,7 +18,7 @@ function GaleriaSidebar (props) {
               </div>
             </div>
             <div class="seguir">
-              <h5>Seguir</h5>
+              <h5 onClick={() => {if(status === 'Seguir'){setStatus('Seguindo')} else {setStatus('Seguir')}}}>{status}</h5>
             </div>
           </div>
 

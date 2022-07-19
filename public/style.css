@@ -316,6 +316,7 @@ ion-icon {
   font-weight: 500;
   color: #139ef2;
   line-height: 14px;
+  cursor: pointer;
 }
 
 
@@ -330,10 +331,6 @@ ion-icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.perfilSugerido:hover {
-  background-color: #d9d9d9;
 }
 
 .sugestaoDePerfil h6 {
